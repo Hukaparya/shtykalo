@@ -1,6 +1,8 @@
 import React from 'react'
 import "./Home.scss"
 import "../../index.css"
+import {BsFacebook} from 'react-icons/bs'
+import {BsInstagram} from 'react-icons/bs'
 
 export const Home = (props) => {
 
@@ -36,6 +38,12 @@ export const Home = (props) => {
                 <p className='logo_big' id='logo_big'>TANYA SHTYKALO</p>
                 <h4> Artist, Sculptor</h4>
                 <p>from Odessa, Ukraine</p>
+                <div className="home_socials">
+                    <div className="home_socials_fb">
+                        <a href="https://www.facebook.com/profile.php?id=1110109295" target="_blank" rel="noopener noreferrer"><BsFacebook /></a>
+                    </div>
+                    <div className="home_socials_inst"><a href="https://www.instagram.com/tanyashtykalo/" target="_blank"><BsInstagram /></a></div>
+                </div>
             </div>
         </div> 
         
