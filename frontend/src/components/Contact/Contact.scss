@@ -1,0 +1,150 @@
+.contact {
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid darkgray;
+    border-left: 1px solid darkgray;
+    font-weight: 300;
+    display: flex;
+    overflow: hidden;
+}
+
+.contacts_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    overflow: hidden;
+    transition: var(--transition);
+    transform-origin: left top;
+    transform: scale(0);
+
+}
+
+.contacts_all {
+    display: flex;
+    width: 80%;
+    gap: 100px;
+}
+.contacts_left {
+    flex: 1;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: start;
+    padding-right: 10px;
+    border-right: 1px solid var(--c-light);
+    
+}
+
+.contact__icon {
+    margin-left: 20px;
+    color: var(--c-primary);
+}
+.contacts_desc {
+    display: flex;
+    align-items: center;
+}
+.contacts_desc a {
+    text-decoration: none;
+    color: var(--c-primary);
+}
+.contacts_desc a:hover {
+    color: var(--c-dark);
+    font-weight: 400;
+}
+
+.contacts_img {
+    width: 100%;
+}
+
+.contacts_right {
+    flex: 1;
+    padding-left: 10px;
+    border-left: 1px solid var(--c-light);
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 0.5rem;
+    
+    background: transparent;
+    border: 1px solid var(--c-light);
+    resize: none;
+    color: var(--color-white);
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: var(--color-primary);
+    
+  }
+  
+  a:hover {
+    color: var(--color-white);
+    }
+
+    .btn {
+      width: max-content;
+      display: inline-block;
+      color: var(--c-primary);
+      padding: 0.75rem;
+      background-color: var(--c-bg-variant);
+      cursor: pointer;
+      border: 1px solid var(--c-light);
+      font-family: 'Montserrat', sans-serif;
+      }
+      .btn:hover {
+        
+        font-weight: 500;
+      }
+.contact-btn-container {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+
+}
+
+
+@media only screen and (max-width: 700px){
+
+    .contacts_all {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
+
+    .contacts_left {
+        border: none;
+        align-items: center;
+        gap: 10px;
+    }
+    .contacts_right {
+        border: none;
+        align-items: center;
+        gap: 10px;
+    }
+    .contacts_all {
+        width: 100%;
+     
+    }
+    input, textarea {
+        width: 100%;
+    }
+    form {
+        align-items: center;
+        gap: 10px;
+    }
+}
